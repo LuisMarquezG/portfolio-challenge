@@ -64,3 +64,33 @@ nav ul {
   padding: 20px;
 
 }
+
+/* HERO------------------------------------------------------------------------------------------- */
+
+.hero-banner {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
+  position: relative;
+  /*This container must be `relative` in order to make the video div container `absolute`*/
+  padding: 20px;
+}
+
+/* This code is to set the video as hero's background, I have set here opacity, measures for the container */
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .5;
+  overflow: hidden;
+}
+
+.bg-video-content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

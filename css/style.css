@@ -226,3 +226,90 @@ nav ul {
   font-weight: bold;
   color: var(--quaternary-color);
 }
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1400px) {
+  .links {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+
+  .header,
+  .hero-banner {
+    width: 100%;
+  }
+
+  .page-section-works {
+    display: block;
+  }
+
+  #w1,
+  #w2,
+  #w3 {
+    width: 600px;
+    height: 420px;
+  }
+
+  .page-section-contact {
+    margin-top: 650px;
+  }
+
+  .w-2-contact {
+    font-size: medium;
+  }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+  .header {
+    width: 745px;
+
+  }
+
+  .hero-banner {
+    display: none;
+  }
+
+  .h1 {
+    font-size: 25px;
+    padding-left: 160px;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .page-section-about {
+    display: block;
+    border-right: none;
+    margin-bottom: 100px;
+  }
+
+  #w1,
+  #w2,
+  #w3 {
+    width: 390px;
+    height: 190px;
+  }
+
+  .page-section-works {
+    border-right: none;
+  }
+
+  .page-section-contact {
+    display: block;
+    border-right: none;
+    margin-top: -220px;
+  }
+
+  .w-2-contact {
+    display: block;
+    padding-left: 20px;
+    padding-top: 30px;
+  }
+}

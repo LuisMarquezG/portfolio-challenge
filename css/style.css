@@ -31,6 +31,10 @@ p {
   margin: 0;
 }
 
+main {
+  width: 90vw;
+}
+
 /* HEADER------------------------------------------------------------------------------------------ */
 
 .header {
@@ -48,6 +52,7 @@ p {
 
 .h2 {
   color: var(--primary-color);
+  font-size: 30px;
 }
 
 nav ul {
@@ -72,8 +77,8 @@ nav ul {
   display: flex;
   justify-content: flex-end;
   padding-right: 40px;
-  position: relative;
   /*This container must be `relative` in order to make the video div container `absolute`*/
+  position: relative;
   padding: 20px;
 }
 
@@ -92,57 +97,132 @@ nav ul {
 .bg-video-content {
   height: 100%;
   width: 100%;
+  /*For to rezise fit its container.*/
   object-fit: cover;
 }
+
+.page-section-about {
+  height: 20vh;
+}
+
+.page-section-works {
+  height: 70vh;
+  margin-bottom: 10%;
+}
+
+.page-section-contact {
+  height: 20vh;
+}
+
+
+/* ABOUT ME======================================================================= */
 
 .page-wrapper {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 25% 75%;
   grid-template-areas:
-    "about text-about"
-    "works works-img"
-    "contact w-2-contact";
+    "about-me  text-about"
+    "my-works  works-img"
+    "contact-me w-2-contact";
   gap: 10px;
-  align-content: start;
-  justify-content: start;
-
-
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
-
-
-
-
-
-/* retomar la actividad aqui */
 .about {
-  grid-area: about;
-  margin-top: 20px;
-
+  grid-area: about-me;
   text-align: center;
-  padding: 15%;
+  padding-right: 10%;
   border-right: 5px solid var(--primary-color);
+  width: 80%;
+  height: 28%;
 }
+
+.speech {
+  grid-area: text-about;
+  font-size: 20px;
+  width: 100%;
+  height: 30%;
+  line-height: 1.5;
+}
+
+
+/* WORKS====================================================================== */
 
 .works {
-  grid-area: works;
-  margin-top: 20px;
-
-  text-align: center;
+  grid-area: my-works;
   padding: 15%;
   border-right: 5px solid var(--primary-color);
+  width: 80%;
+  height: 100%;
 }
+
+.works-img {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    "w1 w1"
+    "w2 w3";
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.work-img-1 {
+  grid-area: w1;
+  width: 20%;
+  height: 100%;
+}
+
+.work-img-2 {
+  grid-area: w2;
+  width: 50%;
+}
+
+.work-img-3 {
+  grid-area: w3;
+  width: 50%
+}
+
+#w1 {
+  width: 890px;
+  border: 5px solid var(--primary-color);
+}
+
+#w3,
+#w2 {
+  width: 400px;
+  height: 230px;
+  border: 5px solid var(--primary-color);
+}
+
+
+/* CONTACT=============================================================================== */
 
 .contact {
-  grid-area: contact;
-
+  grid-area: contact-me;
   margin-top: 20px;
   text-align: center;
   padding: 15%;
   border-right: 5px solid var(--primary-color);
+  width: 80%;
 }
 
-.text-about {
-  grid-area: text-about;
+.links {
+  grid-area: w-2-contact;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.w-2-contact {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--quaternary-color);
 }

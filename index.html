@@ -15,9 +15,9 @@
     <h1 class="h1">Luis Márquez-Garrido</h1>
     <nav>
       <ul class="nav-list">
-        <li><a class="nav-links" href="#">About me</a></li>
-        <li><a class="nav-links" href="#">My Works</a></li>
-        <li><a class="nav-links" href="#">Contact me</a></li>
+        <li><a class="nav-links" href="#about-me">About me</a></li>
+        <li><a class="nav-links" href="#my-works">My Works</a></li>
+        <li><a class="nav-links" href="#contact-me">Contact me</a></li>
       </ul>
     </nav>
   </header>
@@ -38,10 +38,14 @@
   </section>
 
   <main class="page-wrapper">
+
+
     <!-- about me -->
-    <section class="page-section about" id="about-me">
+    <section class="page-section page-section-about about" id="about-me">
       <h2 class="h2">About Me</h2>
-      <p class="text-about">
+    </section>
+    <section class="page-section page-section-about">
+      <p class="speech">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatem tempora, expedita cumque fugit
         reiciendis laboriosam saepe dolorem rerum facere corrupti harum dignissimos laborum totam culpa magni placeat.
         Quae, eum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ab obcaecati sunt quae quod?
@@ -50,16 +54,36 @@
       </p>
     </section>
 
-    <!-- portfolio container -->
-    <section class="page-section works" id="my-works">
-      <h2 class="h2">My Works</h2>
 
+
+    <!-- portfolio container -->
+    <section class="page-section page-section-works works" id="my-works">
+      <h2 class="h2">My Works</h2>
     </section>
 
+    <section class="page-section page-section-works works-img">
+      <a href=https://www.pexels.com/photo/line-patterns-4252526/ target="_blank" class="work-img-1"><img
+          src="/images/img-1.jpg" alt="Diagonal stripes" id="w1"></a>
+
+
+      <a href=https://luismarquezg.github.io/prework-study-guide/ target="_blank" class="work-img-2"><img
+          src="/images/prework-challege.png" alt="The prework challenge screen capture" id="w2"></a>
+
+      <a href=https://luismarquezg.github.io/refactor-challenge/ target="_blank" class="work-img-3"><img
+          src="/images/refactoring-challege.png" alt="The refactor-challenge screen capture" id="w3">
+      </a>
+    </section>
+
+
     <!-- contact -->
-    <section class="page-section contact" id="contact-me">
+    <section class="page-section page-section-contact contact" id="contact-me">
       <h2 class="h2">Contact Me</h2>
-      <p class="w-2-contact"></p>
+    </section>
+
+    <section class="page-section links page-section-contact">
+      <a href="mailto:myemail.com" class="w-2-contact" target="_blank">Email: my-email@whatever.com</a>
+      <a href=https://github.com/ class="w-2-contact" target="_blank">GitHub</a>
+      <a href=https://uk.linkedin.com/ class="w-2-contact" target="_blank">Linkdin</a>
     </section>
   </main>
 </body>

@@ -354,4 +354,8 @@ nav ul {
     padding-left: 20px;
     padding-top: 30px;
   }
+
+  .footer {
+    display: none;
+  }
 }

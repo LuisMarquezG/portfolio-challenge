@@ -191,6 +191,40 @@ nav ul {
 #w1 {
   width: 890px;
   border: 5px solid var(--primary-color);
+
+  position: relative;
+}
+
+/* IMAGEN TEXT------------------------------------------------------------ */
+
+.img-text {
+  position: absolute;
+  padding: 10px;
+  color: var(--secondary-color);
+  font-weight: 700;
+  background-color: var(--primary-color);
+
+}
+
+.img-text-1 {
+  margin-top: -140px;
+  margin-left: -95px;
+  font-size: 25px;
+
+}
+
+.img-text-2 {
+  margin-top: -100px;
+  margin-left: -118px;
+  font-size: 20px;
+
+}
+
+.img-text-3 {
+  margin-top: -100px;
+  margin-left: -118px;
+  font-size: 20px;
+
 }
 
 #w3,
@@ -201,7 +235,7 @@ nav ul {
 }
 
 
-/* CONTACT=============================================================================== */
+/* CONTACT---------------------------------------------------------------- */
 
 .contact {
   grid-area: contact-me;
